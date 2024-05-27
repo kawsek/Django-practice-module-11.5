@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+<div class="row row-cols-4 g-4 m-auto d-flex justify-content-center">
+    {% for i in meals %}
+  
+    <div class="col" style="width: 18rem;">
+      <img src="{{i.strMealThumb}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ i.strMeal }}</h5>
+      </div>
+    </div>
+  
+    {% endfor %}
+  </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
